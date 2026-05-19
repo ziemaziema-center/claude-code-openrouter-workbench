@@ -10,7 +10,7 @@
 ## Local Setup
 
 ```bash
-git clone https://github.com/agent-hq/claude-code-openrouter-workbench.git
+git clone https://github.com/ziemaziema-center/claude-code-openrouter-workbench.git
 cd claude-code-openrouter-workbench
 python validation/validate_repo.py
 ```

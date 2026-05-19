@@ -13,7 +13,7 @@ This quickstart verifies the public, local-only path for Claude Code OpenRouter 
 ## 1. Clone
 
 ```bash
-git clone https://github.com/agent-hq/claude-code-openrouter-workbench.git
+git clone https://github.com/ziemaziema-center/claude-code-openrouter-workbench.git
 cd claude-code-openrouter-workbench
 ```
 
