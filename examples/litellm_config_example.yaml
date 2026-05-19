@@ -1,0 +1,7 @@
+﻿model_list:
+  - model_name: ollama/qwen2.5-coder
+    litellm_params:
+      model: ollama/qwen2.5-coder
+      api_base: http://localhost:11434
+      api_key: REPLACE_ME
+

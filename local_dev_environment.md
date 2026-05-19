@@ -1,0 +1,25 @@
+﻿# Local Development Environment
+
+## Requirements
+
+- Git.
+- Python 3.10+ for validation scripts.
+- A Markdown editor.
+- Optional: a Mermaid renderer for diagrams.
+
+## Local Setup
+
+```bash
+git clone https://github.com/agent-hq/claude-code-openrouter-workbench.git
+cd claude-code-openrouter-workbench
+python validation/validate_repo.py
+```
+
+## Configuration
+
+Use `.env.example` as a shape reference only. Keep real `.env` files local and untracked.
+
+## Expected Output
+
+A healthy local check prints `PASS: repo validation passed`.
+

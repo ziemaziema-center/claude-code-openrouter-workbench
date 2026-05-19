@@ -1,0 +1,37 @@
+﻿name: Public Repo Validation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate structure
+        run: python validation/validate_repo.py
+
+      - name: Markdown smoke check
+        run: |
+          test -f README.md
+          test -f SECURITY.md
+          grep -R "REPLACE_ME" .env.example
+
+      - name: Secret scan placeholder
+        run: |
+          python validation/validate_repo.py
+
+      - name: Link validation placeholder
+        run: |
+          echo "Add lychee or markdown-link-check after public URLs are finalized."
+
+      - name: Run local demo
+        run: python demo_env_profile_validator.py
+
